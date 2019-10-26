@@ -28,7 +28,7 @@ void producer_function (int pno){
 		consumerdone.P();		// wait for the buffer to be empty
 
 		// after wait is done, do the produce operation
-		// you should not need to change this block .
+		// you should not need to change this block .  .
 		mtx.P();
 		buffer ++;
 		cout << "Producer [" << pno << "] left buffer=" << buffer << endl;
